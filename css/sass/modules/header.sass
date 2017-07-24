@@ -1,14 +1,256 @@
 .header
+	&-top
+		padding: 18px 0 18px
+		background-color: #fff
+		border-top: 2px solid $red  
+		
+		@media (max-width: 1199px)
+			padding: 12px 0
+		
+		@media (max-width: 991px)
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			z-index: 5 
+			padding: 10px 0
+			box-shadow: 0 0px 5px rgba(black, 0.3)
+			
+			.wrapper
+				width: 100%
+				
+			.search
+				display: none
+		
+		.site-logo
+			display: block
+			max-width: 100% 
+			width: 265px
+			
+			@media (max-width: 1199px)
+				width: 200px
+			
+			@media (max-width: 991px)
+				width: 150px
+			
+			img
+				display: block
+				max-width: 100%
+				
+	&-bottom
+		background-color: $red 
 
+
+.search
+	width: 265px
+	display: inline-block
+	
+	.search-form
+		width: 100%
+		position: relative
+		
+		input
+			height: 36px
+			width: 100%
+			background-color: $grey
+			padding: 0 48px 0 10px
+			font-size: 14px
+			color: #2c2c2c
+			border: 0
+			border-radius: 3px 
+			
+		.search-button
+			width: 38px
+			height: 100%
+			background-color: $red
+			border-radius: 3px
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0 
+			background-image: url(../images/search-icon.svg)
+			background-position: 50% 50%
+			background-repeat: no-repeat   
+			border: 0
+			cursor: pointer
+			-webkit-transition: all 0.3s ease 
+			-moz-transition: all 0.3s ease 
+			-ms-transition: all 0.3s ease 
+			-o-transition: all 0.3s ease 
+			transition: all 0.3s ease 
+			
+			&:hover
+				background-color: $red-hover 
+
+.header-menu
+	color: #fff 
+	
+	@media (max-width: 991px)
+		display: none
+	
+	> ul
+		+flex($j: flex-start)
+		line-height: normal
+		
+	.menu-item
+		list-style: none
+		line-height: inherit
+		position: relative
+		
+		> .sub-menu
+			opacity: 0
+			visibility: hidden
+			position: absolute
+			z-index: 2 
+			-webkit-transform: translateY(20px) 
+			-moz-transform: translateY(20px) 
+			-ms-transform: translateY(20px) 
+			-o-transform: translateY(20px) 
+			transform: translateY(20px) 
+			top: 100% 
+			left: 0
+			width: 200px
+			background-color: $red 
+			-webkit-transition: all 0.3s ease 
+			-moz-transition: all 0.3s ease 
+			-ms-transition: all 0.3s ease 
+			-o-transition: all 0.3s ease 
+			transition: all 0.3s ease 
+			
+			.menu-item
+				> a 
+					text-transform: none
+					padding: 10px
+					text-align: left
+					font-size: 15px
+			
+		&:hover
+			> a
+				background-color: $red-hover
+				 
+			> .sub-menu
+				opacity: 1
+				visibility: visible
+				-webkit-transform: translateY(0) 
+				-moz-transform: translateY(0) 
+				-ms-transform: translateY(0) 
+				-o-transform: translateY(0) 
+				transform: translateY(0) 
+		 
+		> a
+			font-size: 17px
+			color: inherit
+			text-transform: uppercase 
+			padding: 11px 40px
+			display: block
+			-webkit-transition: all 0.3s ease 
+			-moz-transition: all 0.3s ease 
+			-ms-transition: all 0.3s ease 
+			-o-transition: all 0.3s ease 
+			transition: all 0.3s ease 
+			
+			&:hover
+				background-color: $red-hover 
+				
+		&-has-children
+			> a
+				position: relative
+				
+				&:after
+					content: ""
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 8px 4px 0 4px;
+					border-color: #ffffff transparent transparent transparent;
+					position: absolute
+					top: 50%
+					right: 25px
+					-webkit-transform: translateY(-50%) 
+					-moz-transform: translateY(-50%) 
+					-ms-transform: translateY(-50%) 
+					-o-transform: translateY(-50%) 
+					transform: translateY(-50%)  
+
+
+
+
+.mobile-navigation
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	overflow: auto
+	width: 260px
+	background-color: $red   
+	z-index: 10 
+	border-top: 64px solid transparent
+	border-bottom: 40px solid transparent
+	-webkit-transform: translateX(100%) 
+	-moz-transform: translateX(100%) 
+	-ms-transform: translateX(100%) 
+	-o-transform: translateX(100%) 
+	transform: translateX(100%) 
+	-webkit-transition: all 0.3s ease 
+	-moz-transition: all 0.3s ease 
+	-ms-transition: all 0.3s ease 
+	-o-transition: all 0.3s ease 
+	transition: all 0.3s ease 
+	
+	&.open
+		-webkit-transform: translateX(0) 
+		-moz-transform: translateX(0) 
+		-ms-transform: translateX(0) 
+		-o-transform: translateX(0) 
+		transform: translateX(0) 
+	
+	.search
+		width: 100%
+		padding: 0 15px
+		margin-bottom: 20px 
+		
+		.search-form
+			.search-button
+				height: 32px
+				top: 2px
+				right: 2px
+				bottom: 2px
+
+.mobile-menu
+	.menu-item
+		> a
+			color: #fff
+			font-size: 16px
+			padding: 10px 15px
+			text-align: center
+			display: block
+			text-transform: uppercase 
+			
+		&.current-menu-item
+			a
+				text-decoration: underline
+				background-color: $red-hover 
+		
+		.sub-menu
+			background-color: #C11D25
+			
+			a
+				font-size: 14px
+				padding: 8px 15px
+				text-transform: none
 
 /* ------------------------------------ */
 /*  MENU BUTTON  */
 
 .menu-button
-	+position(fixed, 15px, 10px, auto, auto)
-	background: white
+	position: fixed
+	z-index: 20 
+	top: 12px
+	right: 15px 
+	display: none
+	background: $red
 	border-radius: 50%
-	box-shadow: 0 5px 10px rgba(black, 0.5)
+	box-shadow: 0 0px 5px rgba(black, 0.3)
 	cursor: pointer
 	-webkit-transform: rotate(0deg)
 	-moz-transform: rotate(0deg)
@@ -19,3 +261,15 @@
 	-o-transition: .5s ease-in-out
 	transition: .5s ease-in-out
 	cursor: pointer
+	
+	&.is-active
+		background-color: #fff 
+		
+		.hamburger-inner,
+		.hamburger-inner::before,
+		.hamburger-inner::after
+			background-color: $red 
+	
+	@media (max-width: 991px)
+		display: block
+		margin: 0 0 0 auto

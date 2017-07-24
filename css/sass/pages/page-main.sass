@@ -1,0 +1,227 @@
+.about-us
+	font-size: 20px
+	line-height: 32px
+	
+	@media (max-width: 1199px)
+		font-size: 18px
+		line-height: normal
+	
+	@media (max-width: 599px)
+		font-size: 15px
+		line-height: 22px
+
+	h2
+		font-size: 30px
+		color: $red
+		font-weight 600
+		line-height: 42px
+		margin-bottom: 12px
+		
+		@media (max-width: 1199px)
+			line-height: normal
+			font-size: 26px
+		
+		@media (max-width: 599px)
+			font-size: 22px
+		
+	.button
+		margin-top: 12px 
+		
+
+.services
+	@media (max-width: 991px)
+		.row
+			margin: 0 -10px
+		
+		.col-sm-4
+			padding: 0 10px
+	
+	@media (max-width: 599px)
+		.row
+			margin-bottom: -50px
+
+.service
+	@media (max-width: 599px)
+		margin-bottom: 50px
+		
+	&__image
+		width: 100%
+		margin-bottom: 16px
+		border-radius: 3px
+		border: 2px solid #828282
+		overflow: hidden
+		
+		@media (max-width: 599px)
+			width: 325px
+			margin: 0 auto 15px
+			max-width: 100% 
+		
+		img
+			display: block
+			max-width: 100%
+		
+	&__image:hover + &__label a
+		text-decoration: underline
+	
+	&__label
+		font-size: 20px
+		color: $red
+		line-height: 26px
+		text-transform: uppercase 
+		font-weight: 600
+		
+		@media (max-width: 991px)
+			font-size: 14px
+			line-height: normal
+			
+		@media (max-width: 599px)
+			font-size: 16px
+		
+		a
+			color: inherit
+			&:hover
+				text-decoration: underline
+		
+
+.content-block
+	text-align: left
+	+flex($ai: flex-start)
+	
+	&:not(:last-child)
+		padding-bottom: 30px
+		margin-bottom: 30px
+		border-bottom: 1px solid $grey  
+
+	.image
+		width: 325px
+		border-radius: 3px
+		border: 2px solid #828282
+		overflow: hidden 
+		max-width: 100% 
+		
+		@media (max-width: 991px)
+			margin: 0 auto 20px
+		
+		img
+			display: block
+			width: 100%
+			
+	.content
+		width: -webkit-calc(100% - 325px)
+		width: calc(100% - 325px)
+		padding-left: 40px 
+		
+		@media (max-width: 991px)
+			width: 100%
+			padding-left: 0 
+		
+		&__title
+			margin-top: -10px
+			
+			@media (max-width: 991px)
+				margin-top: 0 
+			 
+			h2,
+			h3
+				font-size: 32px
+				color: $red
+				font-weight: 600
+				
+				@media (max-width: 991px)
+					font-size: 26px
+				
+				@media (max-width: 599px)
+					font-size: 22px
+				
+		&__text
+			font-size: 17px
+			line-height: 26px
+			padding: 8px 0 0
+			
+			@media (max-width: 991px)
+				font-size: 15px
+				line-height: 22px
+			
+			p:not(:last-child)
+				margin-bottom: 10px 
+			
+			& + .button
+				margin-top: 12px 
+				
+			ul
+				li
+					list-style: none 
+					display: block
+					padding-left: 18px
+					position: relative
+					
+					&:before
+						content: ''
+						width: 7px
+						height: 7px
+						border-radius: 50%
+						position: absolute
+						background-color: $red 
+						top: 13px
+						left: 0
+						-webkit-transform: translate(0, -50%) 
+						-moz-transform: translate(0, -50%) 
+						-ms-transform: translate(0, -50%) 
+						-o-transform: translate(0, -50%) 
+						transform: translate(0, -50%)   
+				
+
+
+.partners
+	@media (max-width: 991px)
+		.row
+			margin-bottom: -50px
+			 
+.partner
+	text-align: left
+	
+	@media (max-width: 991px)
+		margin-bottom: 50px 
+	
+	&__logo
+		width: 100%
+		height: 145px
+		position: relative
+		border: 1px solid $grey
+		border-radius: 3px
+		margin-bottom: 12px 
+		
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			-webkit-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+			-ms-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+			max-width: 80%
+			max-height: 80%  
+			z-index: 1
+			
+		.button
+			position: absolute
+			left: -8px
+			bottom: 12px
+			z-index: 2 
+			
+	&__content
+		line-height: 22px
+		
+		h3
+			font-size: 25px
+			color: $red
+			font-weight: 600 
+			line-height: normal
+			margin-bottom: 7px 
+			
+			@media (max-width: 599px)
+				font-size: 22px
+			
+		p:not(:last-child)
+			margin-bottom: 10px

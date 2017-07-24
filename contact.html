@@ -78,12 +78,12 @@
             </div>
 
         </header><!-- end header -->
-
+        
         <button class="hamburger hamburger--spin js-toggle-menu menu-button" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
-        </button> 
+        </button>  
 
 
         <div class="mobile-navigation">
@@ -125,115 +125,85 @@
                 </ul>
             </nav>
         </div>
-        
+
+
+
 
         <!--=================================================================================================-->
                                                     <!-- OFFER SECTION -->
-        <section class="offer" style="background-image: url(images/main-page-offer.jpg);">
-            <div class="page-title">
-                <h1>EMERGENCY RESPONSE PLATFORM & STRATEGIC RESPONSE</h1>
-            </div>
+        <section class="offer">
+            <div class="map" id="map_canvas" data-lat="14.5546" data-lng="121.0143"></div>
         </section><!-- end offer section --> 
 
 
         <main class="site-content">
             <div class="wrapper">
-
-                <section class="section about-us text-center-xs">
-                    <h2>Secur-U is the Philippines' first 24/7 on-call private protection deployment services</h2>
-                    <p>Secur-U is the synergy of Israel's leading emergency response platform, NowForce and one of the leading security firms in the Philippines, Business Profiles Incorporated - Black Pearl Consultancy...</p>
-                    <a href="#" class="button">Read more +</a>
-                </section> <!-- end section -->
-
-
-                <section class="section services">
-                    <div class="section-title">
-                        <h2>Services</h2>
-                    </div>
-
+                
+                <section class="section services-list">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="service">
-                                <div class="service__image"><a href="tab-1.html"><img src="images/service-1.jpg" alt=""></a></div>
-                                <h3 class="service__label"><a href="tab-1.html">Emergency Button Activation And Protection Deployment Services</a></h3>
+                        <div class="col-xs-12 col-sm-12 col-md-6 text-left-xs text-left-md">
+                            <div class="section-title">
+                                <h2>Services</h2>
+                                <p class="sub-title">Use this form to send us a message:</p>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="service">
-                                <div class="service__image"><a href="tab-2.html"><img src="images/service-2.jpg" alt=""></a></div>
-                                <h3 class="service__label"><a href="tab-2.html">LOCATION TRACKING AND AREA THREAT MONITORING</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="service">
-                                <div class="service__image"><a href="tab-3.html"><img src="images/service-3.jpg" alt=""></a></div>
-                                <h3 class="service__label"><a href="tab-3.html">EMERGENCY & MEDICAL RESPONSE SERVICES OF PARTNER NETWORKS</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </section> <!-- end section -->
 
-
-                <section class="section">
-                    <div class="content-block">
-                        <div class="image"><img src="images/main-1.jpg" alt=""></div>
-                        <div class="content">
-                            <div class="content__title">
-                                <h2>Secur U for travel industry</h2>
-                            </div>
-                            <div class="content__text">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem it Ipsum has been the industry's standard dummy text ever since the 1500 when an un known printer took a galley of type it a type specimen book. dummy text ever sinche look printer took a galley of type it a type specimen book.</p>
-                            </div>
-                            <a href="tab-4.html" class="button">Read more +</a>
-                        </div>
-                    </div>
-                </section>
-
-
-                <section class="section partners">
-                    <div class="section-title">
-                        <h2>Our Partners</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-4">
-                            <div class="partner">
-                                <div class="partner__logo">
-                                    <img src="images/black-pearl-logo.png" alt="">
-                                    <a href="#" class="button">Read more +</a>
-                                </div>
-                                <div class="partner__content">
-                                    <h3>Black Pearl</h3>
-                                    <p>Black Pearl Consultancy is the media intelligence unit of the Business Profiles Group, a security consultancy firm that specializes in corporate security and risk management in the Philippines. </p>
-                                    <p>Through its 24/7 operation, Black Pearl provides custom and focus information on topics and issues of strategic importance to its business partners and readers. </p>
-                                    <p>Black Pearl Consultancy media and intelligence centre keeps our business partners abreast of prevailing issues and incidents close to real time. We provide updates, relevant and critical information, assessments, analysis and forecasts.</p>
-                                </div>
+                            <div class="contact-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">Name *</label>
+                                        <input type="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Telephone *</label>
+                                        <input type="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">E-Mail *</label>
+                                        <input type="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Subject *</label>
+                                        <input type="subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Message *</label>
+                                        <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                                    </div>
+                                    <div class="form-group text-right-md">
+                                        <button class="button">Submit</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4">
-                            <div class="partner">
-                                <div class="partner__logo">
-                                    <img src="images/now-force-logo.png" alt="">
-                                    <a href="#" class="button">Read more +</a>
+                        <div class="col-xs-12 col-sm-12 col-md-6 text-left-md">
+                            <div class="contact-info text-left-xs">
+                                <h2>Get In Touch With Us</h2>
+
+                                <div class="info-item">
+                                    <span class="label has-icon">
+                                        <img src="images/pin.svg" alt="">
+                                        <span>Address</span>
+                                    </span>
+                                    <address>5F First Global Building <br>122 Gamboa corner Salcedo Streets <br>San Lorenzo Village, Makati City <br>Philippines 1223</address>
                                 </div>
-                                <div class="partner__content">
-                                    <h3>Now Force</h3>
-                                    <p>NowForce offers personal safety apps, cloud-based computer aided dispatch, and mobile response tools for campus security, private security, and public safety organizations, enabling reduced response times, full situational awareness, and enhanced communications.</p>
-                                    <p>Our  comprehensive emergency response software and apps make it simple for agencies to locate personnel and people in distress and dispatch the closest available responder to any incident.</p>
-                                    <p>Customers of our emergency response software solutions include campus and private security organizations, federal agencies.</p>
+
+                                <div class="info-item">
+                                    <p><span class="label has-icon"><img src="images/phone.svg" alt=""><span>Telephone:</span></span> +632 887.41.81</p>
+                                    <p><span class="label has-icon"><img src="images/fax.svg" alt=""><span>Fax Mashine:</span></span> +632 844.04.31</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4">
-                            <div class="partner">
-                                <div class="partner__logo">
-                                    <img src="images/business-profile-logo.png" alt="">
-                                    <a href="#" class="button">Read more +</a>
+
+                                <div class="info-item">
+                                    <p><span class="label has-icon"><img src="images/web.svg" alt=""><span>Web:</span></span> www.secur-u.com.ph</p>
                                 </div>
-                                <div class="partner__content">
-                                    <h3>Business profiles</h3>
-                                    <p>Business Profiles provides professional services to corporations whether as security consultants or employing the services of highly skilled security managers, practitioners and specialists from a wide range of disciplines.</p>
-                                    <p>Business Profiles personnel are professional, articulate and most of all effective in their designated security capacity.</p>
-                                    <p>Through our expansive network of professional associates in the Philippines and abroad, Business Profiles provides your organization with professional security personnel who possess the attributes you require to secure your success.</p>
+
+                                <div class="info-item">
+                                    <p>
+                                        <span class="label"><span>Follow us:</span></span>
+                                        <a href="#" class="social-item"><i class="icon-twitter"></i></a>
+                                        <a href="#" class="social-item"><i class="icon-facebook"></i></a>
+                                        <a href="#" class="social-item"><i class="icon-linkedin"></i></a>
+                                        <a href="#" class="social-item"><i class="icon-gplus"></i></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

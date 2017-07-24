@@ -1,0 +1,62 @@
+.offer
+	height: 465px
+	position: relative
+	background-position: 50% 50%
+	background-repeat: no-repeat  
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	
+	@media (max-width: 991px)
+		margin-top: 64px /* header height */ 
+		height: 350px
+	
+	@media (max-width: 599px)
+		height: 300px
+	
+	.page-title
+		position: absolute
+		bottom: 0
+		left: 50%
+		-webkit-transform: translateX(-50%) 
+		-moz-transform: translateX(-50%) 
+		-ms-transform: translateX(-50%) 
+		-o-transform: translateX(-50%) 
+		transform: translateX(-50%) 
+		width: 1010px
+		max-width: 100% 
+		color: #fff
+		background-color: rgba(180, 36, 44, 0.5)
+		padding: 18px 25px
+		text-align: center
+		
+		@media (max-width: 991px)
+			width: auto
+			margin: 0 15px
+			left: 0
+			right: 0
+			-webkit-transform: none 
+			-moz-transform: none 
+			-ms-transform: none 
+			-o-transform: none 
+			transform: none 
+		
+		h1
+			font-size: 32px
+			font-weight: 700
+			text-shadow: 0.813px 1.827px 3px rgba(0, 0, 0, 0.15);
+			letter-spacing: 0.005em 
+			line-height: normal
+			text-transform: uppercase
+			-moz-transform: matrix( 1,0,0,1.15603571755098,0,0);
+			-webkit-transform: matrix( 1,0,0,1.15603571755098,0,0);
+			-ms-transform: matrix( 1,0,0,1.15603571755098,0,0);
+			
+			@media (max-width: 991px)
+				font-size: 26px
+			
+			@media (max-width: 599px)
+				font-size: 22px
+			
+	.map
+		height: 100%

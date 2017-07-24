@@ -1,0 +1,93 @@
+.contact-form
+	width: 465px
+	max-width: 100% 
+	
+	@media (max-width: 991px)
+		width: 100%
+		margin-bottom: 50px 
+	
+
+.contact-info
+	width: 350px
+	max-width: 100%
+	margin: 0 auto
+	max-width: 100% 
+	
+	@media (max-width: 991px)
+		width: 100%
+	
+	h2
+		font-size: 30px
+		color: $red
+		margin-top: -6px 
+		margin-bottom: 20px 
+		
+		@media (max-width: 1199px)
+			margin-top: 0 
+		
+		@media (max-width: 599px)
+			font-size: 22px
+			margin-bottom: 10px 
+		
+	.info-item
+		padding: 15px 0
+		border-bottom: 1px dashed $red
+		
+		.label
+			font-size: 17px
+			font-weight: 700
+			display: inline-block
+			color: $red
+			
+			@media (max-width: 599px)
+				font-size: 15px 
+			
+			&.has-icon
+				padding-left: 25px
+				position: relative
+				
+				img
+					position: absolute
+					left: 0
+					top: 11px
+					-webkit-transform: translateY(-50%) 
+					-moz-transform: translateY(-50%) 
+					-ms-transform: translateY(-50%) 
+					-o-transform: translateY(-50%) 
+					transform: translateY(-50%)  
+					
+					@media (max-width: 599px)
+						top: 10px 
+					
+		p:not(:last-of-type)
+			margin-bottom: 10px 
+			
+		address
+			font-style: normal 
+			padding: 15px 0 5px
+			font-size: 17px 
+			
+			@media (max-width: 599px)
+				font-size: 15px
+			
+		.social-item
+			display: inline-block
+			vertical-align: middle
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			background-color: #7D7D7D 
+			position: relative
+			font-size: 18px
+			color: #fff
+			margin: 0 2px
+			
+			i
+				position: absolute
+				top: 50%
+				left: 50%
+				-webkit-transform: translate(-50%, -50%) 
+				-moz-transform: translate(-50%, -50%) 
+				-ms-transform: translate(-50%, -50%) 
+				-o-transform: translate(-50%, -50%) 
+				transform: translate(-50%, -50%)   

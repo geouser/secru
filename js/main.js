@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
     $('.js-toggle-menu').on('click', function(event) {
         event.preventDefault();
         $(this).toggleClass('is-active');
-        $(this).siblings('header').toggleClass('open');
+        $('.mobile-navigation').toggleClass('open');
     });
 
 
@@ -180,12 +180,18 @@ jQuery(document).ready(function($) {
         map.mapTypes.set('Styled',styledMapType);
         map.setMapTypeId('Styled');
 
-        var markerImage = new google.maps.MarkerImage('images/location.png');
+        var image = {
+            url: 'images/location.png',
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(0, 0)
+        };
         var marker = new google.maps.Marker({
-            icon: markerImage,
+            icon: image,
             position: mapMarkerCoord, 
             map: map,
-            title:"Site Title"
+            title:"Site Title",
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(0, 0)
         });
         
         $(window).resize(function (){
