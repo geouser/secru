@@ -35,6 +35,9 @@ form
 		font-weight: 600
 		margin-bottom: 5px
 		
+		& + br
+			display: none
+		
 	input,
 	textarea
 		width: 100%
@@ -54,3 +57,38 @@ form
 		width: 290px
 		max-width: 100%
 		font-size: 15px
+	
+
+
+.wpcf7-not-valid
+ 	border-color: #a94442!important
+ 	
+span.wpcf7-not-valid-tip
+	text-align: left
+	font-size: 12px
+	padding-top: 3px
+	padding-left: 5px
+
+.wpcf7-response-output 
+	margin-left: 0!important
+	margin-right: 0!important
+	border-radius: 6px
+	border-width: 1px!important
+	font-size: 14px
+	text-align: left
+	padding: .75rem 1.25rem!important
+
+div.wpcf7-validation-errors
+	border-color: #faf2cc
+	background-color: #fcf8e3
+	color: #8a6d3b
+
+div.wpcf7-mail-sent-ok
+	background-color: #dff0d8
+	border-color: #d0e9c6
+	color: #3c763d
+  
+div.wpcf7-mail-sent-ng
+	background-color: #f2dede
+	border-color: #ebcccc
+	color: #a94442
